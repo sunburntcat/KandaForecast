@@ -4,9 +4,7 @@ Usage:
 
 npm install
 
-node &ltyour javascript file here&gt
 
-
-Example:
+Usage example:
 
 node omdena_example.js
