@@ -1,0 +1,13 @@
+contract,launch_id,unix_time,miner,assistant,surf_pressure,level_reached,device_type,wxcondition,if_released,last_known_lat,last_known_lon,last_known_elev
+eczcdr3snsyb,1615301154,empatoempata,TTGO LoRa32,390,sunny,N/A
+ipiqhbxqgsmw,1610990097,empatoempato,,297,,
+ipiqhbxqgsmw,1611003259,empatoempato,,224,,
+ipiqhbxqgsmw,1612165872,empatoempato,,270,,
+
+
+
+wxballoons3t,jbyjq4fgki4v,1627287656,empatoempato,,,393.79998779296875000,TTGO Lora 32,sunny,,,,,
+wxballoons3t,thklmttuqqxn,1619605145,empatoempata,,,736.20001220703125000,ESP Lora 32, GPS = 0,partly_cloudy,,,,,
+wxballoons3t,xarzfmmtfli3,1618569689,empatoempata,,,297.79998779296875000,TTGO LORA 32,partly_cloudy,,,,,
+ascensionuyo,b2lib4piyzh1,1627638809,empatoempato,,1008.00000000000000000,912.00000000000000000,Cybaart Kanda v0.3.1,Unknown,1,5.04169082641601562,7.98265504837036133,965.00000000000000000,
+ascensionuyo,zyijpdvemr1h,1627464199,empatoempata,,1008.00000000000000000,958.79998779296875000,Cybaart Kanda v0.3.1,Unknown,1,5.02675914764404297,7.95730209350585938,73.00000000000000000,

@@ -1,0 +1,22 @@
+{
+  "name": "@sunburntcat/launch_reader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "examples/test.js",
+  "dependencies": {
+    "eosjs": "^21.0.3",
+    "eosjs-account-name": "^2.2.1",
+    "eosjs-ecc": "^4.0.7",
+    "json2csv": "^5.0.6",
+    "lodash": "^4.17.15",
+    "node-fetch": "^2.6.0",
+    "util": "^0.12.3"
+  },
+  "keywords": [
+    "climate",
+    "weather",
+    "machine learning"
+  ],
+  "author": "Nicolas Lopez",
+  "license": "AscensionWx internal"
+}
