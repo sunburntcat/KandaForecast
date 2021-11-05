@@ -1,4 +1,4 @@
-const data = require('../lib/eosio_radiosondes');
+const data = require('./lib/eosio_radiosondes');
 
 (async () => {
     // Get last GPS-enabled launch in Uyo, Nigeria

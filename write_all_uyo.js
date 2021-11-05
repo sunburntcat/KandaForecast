@@ -1,5 +1,5 @@
-const data = require('../lib/eosio_radiosondes');
-const csv = require('../lib/radiosonde_csv_writer.js');
+const data = require('./lib/eosio_radiosondes');
+const csv = require('./lib/radiosonde_csv_writer.js');
 
 (async () => {
 
