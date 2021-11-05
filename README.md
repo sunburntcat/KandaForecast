@@ -4,7 +4,7 @@ Usage:
 
 npm install
 
-node <your javascript file here>
+node &ltyour javascript file here&gt
 
 
 Example:
