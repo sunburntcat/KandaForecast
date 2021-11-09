@@ -4,6 +4,7 @@
   "description": "",
   "main": "examples/test.js",
   "dependencies": {
+    "@eosrio/hyperion-stream-client": "^0.4.0-beta.5",
     "eosjs": "^21.0.3",
     "lodash": "^4.17.15",
     "node-fetch": "^2.6.0",
