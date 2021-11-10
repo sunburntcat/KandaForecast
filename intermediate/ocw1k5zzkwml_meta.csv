@@ -1,0 +1,2 @@
+contract,launch_id,unix_time,miner,assistant,surf_pressure,level_reached,device_type,wxcondition,if_released,last_known_lat,last_known_lon,last_known_elev
+ascensiondal,ocw1k5zzkwml,1632524760,noderedtelos,,1008.00000000000000000,335.70001220703125000,Cybaart Kanda v0.3.2,Unknown,1,32.81980514526367188,-97.14958953857421875,8817.00000000000000000,

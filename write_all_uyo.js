@@ -17,7 +17,7 @@ const csv = require('./lib/radiosonde_csv_writer.js');
     }
 
     // Get GPS-enabled launches
-    const launch2 = await data.get_ascensionwx( 990, true, 'uyo' );
+    const launch2 = await data.get_all_ascensionwx( 990, 'uyo');
 
     // Write to CSV
     csv.data_to_csv( 'launches.csv', launches.concat(launch2) );

@@ -10,7 +10,7 @@ const csv = require('../lib/radiosonde_csv_writer.js');
     const launch1 = await data.get_wxballoons3t( 500, true );
 
     // Get last launches across all locations
-    const launch2 = await data.get_ascensionwx( undefined, false, 'all' );
+    const launch2 = await data.get_all_ascensionwx( undefined, 'all' );
 
     // Get only all launches that flew higher than 500hPa in Uyo
     //const launch2 = await data.get_ascensionwx( 950, true, 'uyo' );
