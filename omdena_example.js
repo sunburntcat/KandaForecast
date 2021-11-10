@@ -1,11 +1,17 @@
 const data = require('./lib/eosio_radiosondes');
+const csv = require("./lib/radiosonde_csv_writer.js");
+const radiosondes = require("./lib/eosio_radiosondes");
 
 (async () => {
-    // Get last GPS-enabled launch in Uyo, Nigeria
-    //   which is located very close to Douala, Cameroon
-    const launch = await data.get_all_ascensionwx( 990, 'uyo');
 
-    // Observation data resides in the "data" key of each json object
-    console.log(launch);
+    // This was a good launch out of Dallas "ascensiondal" that reached 335 hPa
+    let launch_id = "ocw1k5zzkwml";
+
+    // Get launch data
+    let launch = await radiosondes.get_single_ascensionwx_launch( "ascensiondal", launch_id);
+
+    // Store data as CSV file
+    await csv.data_to_csv( "intermediate/" + launch_id + ".csv", launch );
+
 })();
 
