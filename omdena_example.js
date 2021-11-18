@@ -5,7 +5,7 @@ const radiosondes = require("./lib/eosio_radiosondes");
 (async () => {
 
     // This was a good launch out of Dallas "ascensiondal" that reached 335 hPa
-    let launch_id = "ocw1k5zzkwml";
+    let launch_id = "yglsqhbocku2";
 
     // Get launch data
     let launch = await radiosondes.get_single_ascensionwx_launch( "ascensiondal", launch_id);
