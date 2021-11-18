@@ -7,4 +7,4 @@ npm install
 
 Usage example:
 
-node omdena_example.js
+node listener_omdena.js
