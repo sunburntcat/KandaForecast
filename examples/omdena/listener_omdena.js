@@ -1,14 +1,24 @@
-const radiosondes = require('./lib/eosio_radiosondes');
-const csv = require('./lib/radiosonde_csv_writer.js');
+const root_dir = '../../';
+
+const radiosondes = require(root_dir + 'lib/eosio_radiosondes');
+const listener = require(root_dir + 'lib/eosio_listeners');
+const csv = require(root_dir + 'lib/radiosonde_csv_writer.js');
 
 var spawn = require('child_process').spawn;
 
 (async () => {
 
-    let contract = 'ascensiondal';
+    let contract = 'ascensionacc';
 
     // Define function of what to do when new data is received.
     const func = async (data, ack) => {
+        /*
+        NOTE:
+               When used with listen_eosio_table, this function must return false, if
+                  the user would like to continue listening to the table
+               If the incoming data meets your criteria to stop listening, then you
+                  should return true.
+         */
 
         //let contract = data.content.data.contract; Ideally we want to know which contract it came from
         let launch_id = data.content.data.launch_id;
@@ -48,7 +58,7 @@ var spawn = require('child_process').spawn;
 
     };
 
-    await radiosondes.listen_ascensionwx_once( func, contract );
+    await listener.watch_table( func, contract, "observations" );
 
 })();
 
