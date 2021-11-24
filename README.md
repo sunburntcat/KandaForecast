@@ -1,10 +1,12 @@
-Pull IoT data from specific Kanda contracts:
+Pull IoT data from specific Kanda contracts, either with single queries or Hyperion websockets
 
-Usage:
+**Usage:**
 
 npm install
 
 
-Usage example:
+**Usage example:**
 
-node listener_omdena.js
+cd examples/dclimate
+
+node listener_dclimateiot2.js
