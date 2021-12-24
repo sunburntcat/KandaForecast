@@ -1,6 +1,6 @@
 const root_dir = '../../';
 
-const listener = require(root_dir + 'lib/eosio_history');
+const history = require(root_dir + 'lib/eosio_history');
 
 (async () => {
 
@@ -16,10 +16,11 @@ const listener = require(root_dir + 'lib/eosio_history');
             meets a certain criteria, return true on this function and the connection will be closed.
         */
 
-        console.log(data);
-
         // Prints out the data submitted to the chain from the iot device.
-        //console.log(data.content.data);
+        console.log("Timestamp: "+data.content.timestamp);
+        console.log("Blockchain trx id: "+data.content.trx_id)
+        console.log(data.content.act.data);
+        console.log();
 
         // Here, dclimate can call a nodejs package that submits the data to IPFS
         //  e.g. https://js.ipfs.io/
@@ -27,7 +28,7 @@ const listener = require(root_dir + 'lib/eosio_history');
     };
 
     // Begin actually watching the eosio blockchain table called "observations"
-    await listener.watch_table( func, contract, "observations" );
+    await history.listen_for_actions( func, contract, "submitdata" );
 
 })();
 
