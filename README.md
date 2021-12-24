@@ -10,5 +10,7 @@ npm install
 cd examples/dclimate
 
 node realtime_IPFS_pipe.js
+
 node IPFS_pipe.js
+
 node signature_challenge.js
