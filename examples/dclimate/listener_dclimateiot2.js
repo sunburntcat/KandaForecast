@@ -1,10 +1,10 @@
 const root_dir = '../../';
 
-const listener = require(root_dir + 'lib/eosio_listeners');
+const listener = require(root_dir + 'lib/eosio_history');
 
 (async () => {
 
-    let contract = 'dclimateiot2';
+    let contract = 'dclimateiot4';
 
     // Define function of what to do when new data is received.
     const func = async (data, ack) => {
@@ -16,8 +16,10 @@ const listener = require(root_dir + 'lib/eosio_listeners');
             meets a certain criteria, return true on this function and the connection will be closed.
         */
 
+        console.log(data);
+
         // Prints out the data submitted to the chain from the iot device.
-        console.log(data.content.data);
+        //console.log(data.content.data);
 
         // Here, dclimate can call a nodejs package that submits the data to IPFS
         //  e.g. https://js.ipfs.io/
