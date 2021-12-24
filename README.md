@@ -1,12 +1,14 @@
-Pull IoT data from specific Kanda contracts, either with single queries or Hyperion websockets
+Pull IoT data from specific dclimateiot contracts, either with single queries or Hyperion websockets
 
 **Usage:**
 
 npm install
 
 
-**Usage example:**
+**Usage examples:**
 
 cd examples/dclimate
 
-node listener_dclimateiot2.js
+node realtime_IPFS_pipe.js
+node IPFS_pipe.js
+node signature_challenge.js
