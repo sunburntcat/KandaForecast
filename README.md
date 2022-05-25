@@ -23,10 +23,9 @@ Python Post-process
 
 **Prerequisites:**
 
-Python >= 3
-Nodejs
+- Python >= 3
+- Nodejs
 
 **Usage:**
 
-npm install
-node listen_and_forecast.js
+$ npm install & node listen_and_forecast.js
